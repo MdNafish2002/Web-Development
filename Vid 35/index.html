@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS More on Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }*/
+    /*    .box::first-line {
+            color: yellow;
+        }*/
+      /*  .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        p,a, .box, [data-color="primary"]{
+            margin-top: 40px;
+            padding-top: 20px;
+        }*/
+        .box:nth-child(even){
+            background-color: aqua;
+        }
+        /*.box:nth-child(odd){
+            background-color: blueviolet;
+        }*/
+        .box:nth-last-child(1){
+            background-color: greenyellow;
+        }
+        .boxes::before{
+            content: "Bismisllah";
+            background-color: rgb(3, 255, 24);
+        }
+        
+        .boxes::after{
+            content: "Alhamdulillah";
+            background-color: rgba(55, 3, 243, 0.411);
+        }
+        ::selection{
+            color: crimson;
+            background-color: rgb(201, 171, 53);
+        }
+        .box::first-letter{
+            color: darkorange;
+            background-color: blue;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: rgb(50, 54, 54);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <input type="text" placeholder="Enter Text Here">
+    </div>
+</body>
+
+</html>
