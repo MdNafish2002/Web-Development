@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar Using Flex Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            /*border: 2px solid red;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .items {
+           /* margin-right: 20px;*/
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: large;
+            top: 0;
+          /*  width: 100%;*/
+
+        }
+        .items:first-child{
+          padding-right: 600px;
+         
+        }
+     /*   .items:nth-child(2){
+            padding-right: 200px;
+        }
+        .items:nth-child(3){
+          
+        }*/
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items"><img src="ulta edit.png" alt="logo"></div>
+        <div class="items types">Products</div>
+        <div class="items types">Pricing</div>
+        <div class="items types">Resources</div>
+        <div class="items types">About Us</div>
+        <div class="items types"><img src="Settings.png" alt="Settings"></div>
+    </div>
+</body>
+
+</html>
