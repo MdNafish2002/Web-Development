@@ -1,0 +1,15 @@
+p{
+    background-color: aqua;
+    font-size: larger;
+    font-weight: 200;
+}
+span{
+    background-color: chartreuse;
+}
+
+.myclass2{
+    background-color: coral;
+}
+.myclass3{
+    background-color: cadetblue;
+}
