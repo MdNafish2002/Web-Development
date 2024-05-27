@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: teal;
+            width: 30vw;
+            height: 80vh;
+        }
+        .box{
+            background-color: aqua;
+            width: 34px;
+            height: 45px;
+            animation-name: anyvariablename;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.74, 0, 0.1, 0.96);
+            animation-direction: alternate-reverse;
+        }
+        
+        @keyframes anyvariablename {
+            from{
+
+            }
+            to{
+                transform: translateX(500px);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
