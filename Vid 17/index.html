@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectord in CSS</title>
+    <style>
+       /* p {
+            /*ELEMENT SELECTOR*/
+            background-color: chartreuse;
+        }*/
+
+        .red {
+            /*CLASS SELECTOR*/
+            background-color: red;
+        }
+
+        #green {
+            /*ID SELECTOR*/
+            background-color: green;
+        }
+        
+        article > p{
+            /*Child Selectors*/
+            background-color: aquamarine;
+
+        }
+        article p{
+            /*Descendant Selectors*/
+            background-color: brown;
+        }
+        /*Universal Selectors*/
+        *{
+            margin:0%;
+            padding:0%;
+        }
+        /*Pseudo Selectors*/
+        a:visited{
+            color: chartreuse;
+        }
+        a:link{
+            color: crimson;
+        }
+        a:hover{
+            color: blueviolet;
+        }
+        a:active{
+            color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">Hi this is a div</div>
+    <div id="green">This is another div</div>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, omnis.</h4>
+    <article><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus fugit iure asperiores veniam tempore eligendi laborum aspernatur in itaque!</p></article>
+    <article>
+        <span><p>Checking out selectors</p></span>
+    </article>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+</body>
+
+</html>
